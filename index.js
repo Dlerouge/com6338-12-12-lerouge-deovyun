@@ -27,7 +27,7 @@ class Word {
 
   // implement the guessLetter function:
   guessLetter(letter) {
-  if (this.correctLetters.includes(letter) || this.incorrectLetters.includes(letter)) {
+    if (this.correctLetters.includes(letter) || this.incorrectLetters.includes(letter)) {
       return
     }
 
@@ -50,7 +50,7 @@ class Word {
 
   // implement the updateScreen function:
   updateScreen() {
-   const wordToGuessEl = document.getElementById('word-to-guess')
+    const wordToGuessEl = document.getElementById('word-to-guess')
     const remainingGuessesEl = document.getElementById('remaining-guesses')
     const incorrectLettersEl = document.getElementById('incorrect-letters')
 
@@ -69,7 +69,7 @@ class Word {
 
   // implement the getWinOrLoss function:
   getWinOrLoss() {
-  if (this.word === this.displayWord && this.remainingGuesses > 0) {
+    if (this.word === this.displayWord && this.remainingGuesses > 0) {
       return 'win'
     } else if (this.word !== this.displayWord && this.remainingGuesses <= 0) {
       return 'loss'
